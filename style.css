@@ -11,6 +11,7 @@ html {
 body > *{
     width: 80%;
     margin: auto;
+    /* margin-bottom: 10px; */
 }
 
 /* HEADER */
@@ -53,17 +54,28 @@ main {
     margin-bottom: 10px;
 }
 
-main > figure {
-    background-color:khaki;
-    height: 250px;
+main > .upper {
+    height: 400px;
     margin: 20px 0;
 }
 
-main > section {
+main > .upper > figure {
+    height: 100%;
+    background-image: url(img/banner.jpg);
+    background-position: center;
+}
+
+main > .upper  figcaption {
+    color: white;
+    padding: 250px 45% 0 50px;
+    height: fit-content;
+}
+
+main .lower {
     background-color:rgb(6, 130, 255);
 }
 
-main > section > * {
+main .lower > * {
     background-color: skyblue;
     margin-bottom: 1%;
 }
