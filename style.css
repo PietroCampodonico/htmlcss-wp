@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 70%;
+    margin: auto;
+}
+
+header > nav > div {
+    background-color:orchid; 
+    height: 50px;
+}
+
+main {
+    margin-bottom: 10px;
+}
+
+main > figure {
+    background-color:khaki;
+    height: 250px;
+    margin: 20px 0;
+}
+
+main > section {
+    background-color:rgb(6, 130, 255);
+}
+
+main > section > * {
+    background-color: skyblue;
+    margin-bottom: 1%;
+}
+
+main > section > nav {
+    height: 45px;
+}
+
+main > section > aside {
+    width: 25%;
+}
+
+main > section > article {
+    width: 48%;
+    margin: 0 1%;
+}
+
+aside, article {
+    float: left;
+    height: 300px;
+} 
+
+main > section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color:rebeccapurple;
+    height: 35px;
+}
