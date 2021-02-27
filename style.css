@@ -130,7 +130,13 @@ main > .lower .caption#right {
     background-image: url(img/img-3.jpg);
 }
 
+/* FOOTER */
+
 footer {
-    background-color:rebeccapurple;
     height: 35px;
+    text-align: center;
+}
+
+footer span {
+    color: red;
 }
