@@ -14,6 +14,10 @@ body > *{
     /* margin-bottom: 10px; */
 }
 
+body p {
+    font-size: 12px;
+}
+
 /* HEADER */
 header {
     margin-bottom: 10px;
@@ -49,7 +53,7 @@ header  nav a {
 }
 
 /* MAIN */
-
+/* Upper section */
 main {
     margin-bottom: 10px;
 }
@@ -63,6 +67,8 @@ main > .upper > figure {
     height: 100%;
     background-image: url(img/banner.jpg);
     background-position: center;
+    border-radius: 20px;
+    : ;
 }
 
 main > .upper  figcaption {
@@ -71,18 +77,25 @@ main > .upper  figcaption {
     height: fit-content;
 }
 
+/* Lower section */
+
 main .lower {
-    background-color:rgb(6, 130, 255);
+    /* background-color:rgb(6, 130, 255); */
 }
 
-main .lower > * {
+main .lower > *:not(header) {
     background-color: skyblue;
     margin-bottom: 1%;
 }
 
-main  nav {
-    height: 45px;
+section > header > p {
+    color: lightgrey;
 }
+
+.lower > aside, article {
+    float: left;
+    height: 400px;
+} 
 
 main > section > aside {
     width: 25%;
@@ -93,15 +106,28 @@ main > section > article {
     margin: 0 1%;
 }
 
-aside, article {
-    float: left;
-    height: 300px;
-} 
-
-main > section::after {
+main > section.lower::after {
     content: "";
     display: table;
     clear: both;
+}
+
+main >.lower .caption {
+    height: 40%;
+    background-position: center;
+    border-radius: 20px;
+}
+
+main > .lower .caption#left {
+    background-image: url(img/img-1.jpg);
+}
+
+main > .lower .caption#center {
+    background-image: url(img/banner-2.jpg);
+}
+
+main > .lower .caption#right {
+    background-image: url(img/img-3.jpg);
 }
 
 footer {
